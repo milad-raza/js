@@ -6,9 +6,6 @@ document.write("The given character is upper case latter<br>");
 else if (now >= 97 && now <= 122){
 document.write("The given character is lower case latter<br>");
 }
-else if (now >= 30 && now <= 39){
-document.write("The given character is number<br>");
-}
 
 var num1, num2;
 num1 = prompt("Input the First integer");
@@ -60,7 +57,8 @@ if (hour < 18) {
 greeting = "Good day";
 alert(greeting);
 }
-else{
+else
+{
 greeting = "Good evening";
 alert (greeting);
 }
