@@ -834,16 +834,21 @@ document.write("<b>"+a3+"k,</b>");
 
 //task #7
 document.write("<br>");
+
 var enter = prompt("Welcome to ABC Bakery. what do u want to order sir/ma'am?");
-if (enter == "cake"||"apple pie"||"cookie"||" chips"||"patties"){
+
 var arr = ["cake", "apple pie", "cookie", "chips", "patties"];
-for(var z=0; z<arr.length; z++)
-if(arr[z] === enter){
-document.write("<h3>"+enter+" is <b>available</b> at index "+z+" in our bakery</h3>");
+
+if(arr.indexOf(enter) !== -1){
+
+document.write("<h3>"+enter+" is <b>available</b> at index "+arr.indexOf(enter)+" in our bakery</h3>");
+
 }
-}
+
 else{
+
 document.write("<h3>We are sorry. "+enter+" is <b>not available</b> in our bakery</h3>");
+
 }
 
 
